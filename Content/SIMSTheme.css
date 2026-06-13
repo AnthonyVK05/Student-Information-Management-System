@@ -1,0 +1,414 @@
+﻿/* ===== SIMS IOS GLASS THEME ===== */
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top left, rgba(59,130,246,.14), transparent 35%), radial-gradient(circle at bottom right, rgba(37,99,235,.08), transparent 35%), linear-gradient(135deg, #f7faff, #edf4ff, #ffffff);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* TOP BAR */
+
+.topbar {
+    background: rgba(255,255,255,.35);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-bottom: 1px solid rgba(255,255,255,.50);
+}
+
+.page-shell {
+    width: 98%;
+    max-width: 1700px;
+    margin: auto;
+}
+
+/* GLASS CARDS */
+
+.glass-card {
+    background: rgba(255,255,255,.34);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255,255,255,.45);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(31,38,135,.10);
+}
+
+    .glass-card:hover {
+        box-shadow: 0 14px 36px rgba(31,38,135,.13);
+    }
+
+/* HERO */
+
+.hero-card {
+    padding: 28px 32px;
+}
+
+    .hero-card h2 {
+        font-weight: 800;
+        color: #0f172a;
+    }
+
+    .hero-card p {
+        color: #64748b;
+    }
+
+/* FORM CARD */
+
+.form-card {
+    overflow: hidden;
+}
+
+.form-header {
+    padding: 22px 28px;
+    background: rgba(219,234,254,.42);
+    border-bottom: 1px solid rgba(255,255,255,.45);
+}
+
+.form-body {
+    padding: 30px;
+}
+
+/* TEXT */
+
+.mini-help {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #334155;
+}
+
+/* INPUTS */
+
+.form-control,
+.form-select {
+    max-width: 100%;
+    min-height: 50px;
+    padding: 12px 16px;
+    border-radius: 16px;
+    background: rgba(255,255,255,.55);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(148,163,184,.35);
+    color: #0f172a;
+    box-shadow: inset 0 1px 1px rgba(255,255,255,.75);
+    transition: all .25s ease;
+}
+
+    .form-control::placeholder {
+        color: #94a3b8;
+    }
+
+    .form-control:hover,
+    .form-select:hover {
+        border-color: rgba(37,99,235,.45);
+        background: rgba(239,246,255,.72);
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+        border-color: #2563eb;
+        background: rgba(255,255,255,.85);
+        box-shadow: 0 0 0 .20rem rgba(37,99,235,.14), inset 0 1px 1px rgba(255,255,255,.90);
+    }
+
+/* READONLY MATRIC */
+
+.readonly-matric {
+    background: rgba(219,234,254,.80) !important;
+    color: #1e3a8a !important;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* BUTTONS */
+
+.btn-ios-primary,
+.btn-ios-light,
+.btn-ios-warning,
+.btn-ios-danger,
+.btn-ios-success {
+    border-radius: 999px;
+    padding: 10px 22px;
+    font-weight: 700;
+    transition: all .25s ease;
+}
+
+.btn-ios-primary {
+    background: rgba(37,99,235,.88);
+    color: white;
+    border: 1px solid rgba(37,99,235,.25);
+    box-shadow: 0 10px 25px rgba(37,99,235,.16);
+}
+
+    .btn-ios-primary:hover {
+        background: #1d4ed8;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+.btn-ios-light {
+    background: rgba(255,255,255,.60);
+    color: #0f172a;
+    border: 1px solid rgba(255,255,255,.70);
+}
+
+    .btn-ios-light:hover {
+        background: rgba(219,234,254,.90);
+        color: #1d4ed8;
+        transform: translateY(-2px);
+    }
+
+.btn-ios-warning {
+    background: rgba(245,158,11,.90);
+    color: white;
+    border: none;
+}
+
+    .btn-ios-warning:hover {
+        background: #d97706;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+.btn-ios-danger {
+    background: rgba(220,38,38,.88);
+    color: white;
+    border: none;
+}
+
+    .btn-ios-danger:hover {
+        background: #b91c1c;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+.btn-ios-success {
+    background: rgba(22,163,74,.88);
+    color: white;
+    border: none;
+}
+
+    .btn-ios-success:hover {
+        background: #15803d;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+/* SIDEBAR */
+
+.sidebar {
+    background: rgba(255,255,255,.22);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border-right: 1px solid rgba(255,255,255,.35);
+}
+
+    .sidebar a {
+        color: #1f2937;
+        text-decoration: none;
+        display: block;
+        padding: 11px 14px;
+        margin-bottom: 6px;
+        border-radius: 14px;
+        transition: all .25s ease;
+    }
+
+        .sidebar a:hover {
+            background: rgba(59,130,246,.12);
+            color: #2563eb;
+            transform: translateX(4px);
+        }
+
+/* SECTION TITLE */
+
+.section-title {
+    font-size: 12px;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+/* SEARCH BOX */
+
+.search-box {
+    background: rgba(255,255,255,.32);
+    border: 1px solid rgba(255,255,255,.48);
+    border-radius: 22px;
+    padding: 20px;
+    margin-bottom: 18px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+/* ==========================================
+   TABLE / GRIDVIEW
+========================================== */
+
+.table-card {
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.table-header {
+    padding: 20px 28px;
+    background: rgba(219,234,254,.35);
+    border-bottom: 1px solid rgba(255,255,255,.45);
+}
+
+    .table-header h5 {
+        margin: 0;
+        font-weight: 700;
+        color: #1e293b;
+    }
+
+    .table-header .mini-help {
+        margin-top: 4px;
+        font-size: 13px;
+        color: #64748b;
+    }
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+.table {
+    width: 100%;
+    min-width: 1300px;
+    margin-bottom: 0;
+    background: rgba(255,255,255,.45);
+    border-radius: 18px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+    .table th {
+        background: rgba(219,234,254,.65);
+        color: #334155;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 12px 14px;
+        white-space: nowrap;
+        text-align: left;
+        border-bottom: 1px solid rgba(203,213,225,.60);
+    }
+
+    .table td {
+        padding: 12px 14px;
+        font-size: 14px;
+        color: #0f172a;
+        vertical-align: middle;
+        border-bottom: 1px solid rgba(226,232,240,.70);
+    }
+
+.table-hover tbody tr {
+    transition: all .2s ease;
+}
+
+    .table-hover tbody tr:hover {
+        background: rgba(59,130,246,.05);
+    }
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Edit Link */
+
+.table a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+    .table a:hover {
+        color: #1d4ed8;
+        text-decoration: underline;
+    }
+
+/* Status Badge */
+
+.status-active {
+    background: rgba(34,197,94,.15);
+    color: #15803d;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-inactive {
+    background: rgba(239,68,68,.15);
+    color: #b91c1c;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Responsive */
+
+@media(max-width:992px) {
+
+    .table th,
+    .table td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+/* DASHBOARD STATISTICS */
+
+.card-stat,
+.stat-card {
+    background: rgba(255,255,255,.34);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border-radius: 24px;
+    border: 1px solid rgba(255,255,255,.45);
+    padding: 22px;
+    min-height: 120px;
+    box-shadow: 0 10px 30px rgba(31,38,135,.10);
+    transition: all .25s ease;
+}
+
+    .card-stat:hover,
+    .stat-card:hover {
+        border-color: rgba(59,130,246,.30);
+        box-shadow: 0 14px 36px rgba(37,99,235,.13);
+        transform: translateY(-4px);
+    }
+
+    .card-stat h6,
+    .stat-card h6 {
+        color: #64748b;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .card-stat h2,
+    .stat-card h2 {
+        color: #0f172a;
+        font-size: 34px;
+        font-weight: 800;
+        margin: 0;
+    }
+
+/* SMALL BLUE DOT */
+
+.blue-dot {
+    width: 10px;
+    height: 10px;
+    background: #2563eb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}

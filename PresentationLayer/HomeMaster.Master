@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"
+CodeBehind="HomeMaster.master.cs"
+Inherits="Student_Information_Management_System.PresentationLayer.HomeMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>University System</title>
+</head>
+
+<body>
+<form id="form1" runat="server">
+
+    <div class="topbar">
+        UNIVERSITY SYSTEM
+    </div>
+
+    <div class="layout">
+
+        <div class="sidebar">
+            Dashboard
+        </div>
+
+        <div class="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+
+    </div>
+
+</form>
+</body>
+</html>
